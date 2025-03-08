@@ -7,6 +7,9 @@ export PYTHON3_EXEC="$( which python3 )"
 export PYTHON3_LIBRARY="$( ${PYTHON3_EXEC} -c 'import os.path; from distutils import sysconfig; print(os.path.realpath(os.path.join(sysconfig.get_config_var("LIBPL"), sysconfig.get_config_var("LDLIBRARY"))))' )"
 export PYTHON3_INCLUDE_DIR="$( ${PYTHON3_EXEC} -c 'from distutils import sysconfig; print(sysconfig.get_config_var("INCLUDEPY"))' )"
 
+sudo pip3 uninstall em
+sudo pip install empy==3.3.4
+
 colcon build \
     --packages-ignore cyclonedds rcl_logging_log4cxx rcl_logging_spdlog rosidl_generator_py rclandroid ros2_talker_android ros2_listener_android \
     --cmake-args \
