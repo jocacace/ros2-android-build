@@ -11,7 +11,7 @@ sudo pip3 uninstall em
 sudo pip install empy==3.3.4
 
 colcon build \
-    --packages-ignore cyclonedds rcl_logging_log4cxx rcl_logging_spdlog rosidl_generator_py rclandroid ros2_talker_android ros2_listener_android \
+    --packages-ignore cyclonedds rcl_logging_log4cxx rcl_logging_spdlog rosidl_generator_py rclandroid ros2_talker_android ros2_listener_android uncrustify_vendor \
     --cmake-args \
     -DPYTHON_EXECUTABLE=${PYTHON3_EXEC} \
     -DPYTHON_LIBRARY=${PYTHON3_LIBRARY} \
