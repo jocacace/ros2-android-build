@@ -32,6 +32,7 @@ RUN wget -O /tmp/android-ndk.zip https://dl.google.com/android/repository/${ANDR
 
 RUN mkdir -p /home/${USERNAME}/workspace/
 
+COPY ./ros_domain_id.txt /home/${USERNAME}/
 COPY ./build-android.sh /home/${USERNAME}/
 RUN chmod +x /home/${USERNAME}/build-android.sh
 
