@@ -1,3 +1,7 @@
 output/
-tmp/
+tmp/build
+tmp/install
+tmp/libc++_shared.so
+tmp/log
+tmp/ros2_java_android.repos
 out/
